@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Modern Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg width="48" height="48" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <!-- Main Circle -->
+                    <circle cx="120" cy="120" r="120" fill="url(#paint0_radial)"/>
+                    
+                    <!-- Abstract Shape Elements -->
+                    <path d="M160 70H130C118.954 70 110 78.9543 110 90V150C110 161.046 118.954 170 130 170H160C171.046 170 180 161.046 180 150V90C180 78.9543 171.046 70 160 70Z" fill="white"/>
+                    <path d="M110 70H80C68.9543 70 60 78.9543 60 90V150C60 161.046 68.9543 170 80 170H110C121.046 170 130 161.046 130 150V90C130 78.9543 121.046 70 110 70Z" fill="white" fill-opacity="0.8"/>
+                    
+                    <!-- Connecting Element -->
+                    <path d="M130 90C130 78.9543 121.046 70 110 70C121.046 70 130 78.9543 130 90Z" fill="white" fill-opacity="0.9"/>
+                    
+                    <!-- Decorative Elements -->
+                    <circle cx="145" cy="110" r="10" fill="url(#paint1_linear)" class="pulse-circle"/>
+                    <circle cx="95" cy="130" r="8" fill="url(#paint1_linear)" class="pulse-circle" style="animation-delay: 0.5s"/>
+                    
+                    <!-- Gradients -->
+                    <defs>
+                        <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 120) rotate(45) scale(170)">
+                            <stop stop-color="#6366F1"/>
+                            <stop offset="0.5" stop-color="#818CF8"/>
+                            <stop offset="1" stop-color="#F472B6"/>
+                        </radialGradient>
+                        <linearGradient id="paint1_linear" x1="0" y1="0" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F472B6"/>
+                            <stop offset="1" stop-color="#6366F1"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">
+                    <span class="highlight">Inn</span><span class="logo-text-end">ova</span>
+                    <span class="logo-tagline">Digital Solutions</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="cta-button">Get Started</button>
+                <!-- Mobile menu toggle -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+                <label for="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Innovate. Create. <span class="highlight">Elevate.</span></h1>
+            <p>Your digital journey starts here with our sleek, scalable web experiences.</p>
+            <div class="cta-group">
+                <a href="#" class="cta-btn primary">Get Started</a>
+                <a href="#features" class="cta-btn secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scroll-text">Scroll</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our <span class="highlight">Features</span></h2>
+                <p>Discover what makes our platform stand out</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance for seamless user experience across all devices.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Enterprise-grade security with 99.9% uptime guarantee.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Beautiful Design</h3>
+                    <p>Stunning visuals and intuitive interfaces that captivate users.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Clean Code</h3>
+                    <p>Maintainable and scalable codebase built with best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modern Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our <span class="highlight">Clients</span> Say</h2>
+                <p>Trusted by businesses worldwide</p>
+            </div>
+            <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+                <!-- Hidden radio buttons for CSS-only slider -->
+                <input type="radio" name="testimonial-radio" id="testimonial-1" class="testimonial-radio" checked>
+                <input type="radio" name="testimonial-radio" id="testimonial-2" class="testimonial-radio">
+                <input type="radio" name="testimonial-radio" id="testimonial-3" class="testimonial-radio">
+                
+                <!-- Testimonial cards -->
+                <div class="testimonial-cards">
+                    <div class="testimonial-card" id="card-1">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="testimonial-content">
+                            <p>"Innova transformed our digital presence completely. The modern design and intuitive interface have significantly improved our user engagement."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, TechStart</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" id="card-2">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="testimonial-content">
+                            <p>"Working with Innova was a game-changer for our business. Their attention to detail and innovative approach exceeded our expectations."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Michael Chen">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>CTO, GrowthLabs</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card" id="card-3">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="testimonial-content">
+                            <p>"The team at Innova delivered beyond our expectations. Their creative solutions and technical expertise made our project a huge success."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez">
+                            </div>
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Marketing Director, Elevate</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation controls using labels instead of buttons -->
+                <div class="testimonial-nav">
+                    <label for="testimonial-3" class="prev-btn"><i class="fas fa-chevron-left"></i></label>
+                    <div class="testimonial-dots">
+                        <label for="testimonial-1" class="dot"></label>
+                        <label for="testimonial-2" class="dot"></label>
+                        <label for="testimonial-3" class="dot"></label>
+                    </div>
+                    <label for="testimonial-2" class="next-btn"><i class="fas fa-chevron-right"></i></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>*** ********** ******, **** ****, ** *****</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>*****@******.**</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>** ******-*****</p>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="highlight">Inn</span>ova
+                    </div>
+                    <p>Creating stunning digital experiences that elevate your brand.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Branding</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Innova. All rights reserved.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </footer>
+    
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+        
+        // Testimonial slider
+        const nextBtn = document.querySelector('.next-btn');
+        const prevBtn = document.querySelector('.prev-btn');
+        const testimonials = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+        
+        function showTestimonial(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentIndex = index;
+        }
+        
+        nextBtn.addEventListener('click', () => {
+            let newIndex = currentIndex + 1;
+            if (newIndex >= testimonials.length) newIndex = 0;
+            showTestimonial(newIndex);
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            let newIndex = currentIndex - 1;
+            if (newIndex < 0) newIndex = testimonials.length - 1;
+            showTestimonial(newIndex);
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonial(index);
+            });
+        });
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+    <!-- AOS initialization script -->    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init();
+    </script>
+</body>
+</html>
